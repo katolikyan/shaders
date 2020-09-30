@@ -28,6 +28,7 @@ void main(){
   float circle3 = circleShapeShift(
                   position, (2. + sin(u_time + 1.)) / 9., vec2(0.6, 0.4));
 
+  //color = vec3(1. - circle, 1. - circle2, 1. - circle3);
   color = vec3(circle, circle2, circle3);
 
   gl_FragColor = vec4(color, 1.);
