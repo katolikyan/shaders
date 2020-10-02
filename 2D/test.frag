@@ -1,0 +1,26 @@
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+uniform vec2 u_resolution;
+uniform float u_time;
+
+void main(){
+  vec2 coords = 3.0 * gl_FragCoord.xy / u_resolution;
+
+  for (int i = 1; i < 8; i++)
+  {
+    float n = float(i);
+    coords += vec2(1.7 / n * sin(n * coords.y + u_time), 
+                   2. / n * sin(coords.x + u_time * 0.3));
+  }
+
+//  coords += vec2(1. * sin(2. * coords.y + u_time),
+ //                     sin(coords.x + u_time));
+
+
+  vec3 color = vec3(0.5 * sin(coords.x), 
+                    0.5 * sin(coords.x) + 0.3,
+                    0.5 * sin(coords.x) + 0.4);
+  gl_FragColor = vec4(color, 1.);
+}
