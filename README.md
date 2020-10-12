@@ -1,6 +1,7 @@
 # My Dear Shaders
 GLSL fragment shaders\
-The beauty of mathematics
+The beauty of mathematics\
+The code is pretty much experiments and exploration
 
 ## Usage & VSCode SetUp
 You can install evrything from VSCode package manager
@@ -20,17 +21,17 @@ Canvas is convenient for live coding and playing around, but a little weird with
 
 ## Shaders
 
-Ray Marching Sphere |  Mandelbrot Flower | Mandelbrot Set |           
+Ray Marching Sphere        |  Mandelbrot Flower        |            Mandelbrot Set |           
 :-------------------------:|:-------------------------:|:-------------------------:|
 ![](./media/RayMarching.gif)  |  ![](./media/MandelbrotFlower.gif)  | ![](./media/MandelbrotZoom.gif)  |
 
-Flow |  Julia Set | Circs |           
+Julia Set                  |  Mandelbrot Lens          |                      Flow |           
 :-------------------------:|:-------------------------:|:-------------------------:|
-![](./media/Flow2.gif)  |  ![](./media/JuliaSet.gif)  | ![](./media/Circs.gif)  |
+![](./media/JuliaSet.gif)  | ![](./media/MandelbrotLens.gif) | ![](./media/Flow2.gif)  |
 
-Mandelbrot Lens |  Japan | Flow-2 |           
+Flow-2                     |  Circs                    | Japan                     |           
 :-------------------------:|:-------------------------:|:-------------------------:|
-![](./media/MandelbrotLens.gif)  |  ![](./media/Japan.gif)  | ![](./media/Flow.gif)  |
-
-A neat wallpaper\
+![](./media/Flow.gif)      |   ![](./media/Circs.gif)  | ![](./media/Japan.gif)    |
+ 
+A neat Mandelbrot wallpaper\
 ![Mandelbrot Flower Wallpaper](./media/MadelbrotFlowersWallpaper_blured.png)

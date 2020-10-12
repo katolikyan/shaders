@@ -64,7 +64,7 @@ void main(){
   uv.x *= u_resolution.x / u_resolution.y;
 
   vec3 color = vec3(0.);
-  float m = look01(uv);
+  float m = look02(uv);
 
   if (m < 1.)
     color = vec3(sin(m * 2. * PI - PI/2.) + 1., 
