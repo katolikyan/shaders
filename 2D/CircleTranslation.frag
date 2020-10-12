@@ -15,11 +15,9 @@ mat2 scale(float x, float y){
 
 void main(){
   vec2 coords = gl_FragCoord.xy / u_resolution;
-  //coords -= 0.5;
+  coords.x *= u_resolution.x / u_resolution.y;
   vec3 color = vec3(0.0);
   vec2 translate = vec2(sin(u_time * 2.), cos(u_time * 2.)) * .3;
-
-  //coords = scale(2., 2.) * coords;
 
   color = vec3(circleshape(coords + translate, 0.1));
 

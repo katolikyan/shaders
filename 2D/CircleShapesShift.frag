@@ -22,12 +22,13 @@ void main(){
   //float circle3 = circleShapeShift(position, 0.35, vec2(0.6, 0.4));
 
   float circle = circleShapeShift(
-                 position, (2. + sin(u_time)) / 10., vec2(0.5, 0.6));
+                  position, (2. + sin(u_time)) / 10., vec2(0.5, 0.6));
   float circle2 = circleShapeShift(
                   position, (2. + sin(u_time + .5)) / 15., vec2(0.4, 0.4));
   float circle3 = circleShapeShift(
                   position, (2. + sin(u_time + 1.)) / 9., vec2(0.6, 0.4));
 
+  // inverse colors
   //color = vec3(1. - circle, 1. - circle2, 1. - circle3);
   color = vec3(circle, circle2, circle3);
 

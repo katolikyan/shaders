@@ -16,9 +16,11 @@ float polygonShape(vec2 position, float radius, float sides) {
 
 void main(){
   vec2 position = gl_FragCoord.xy / u_resolution;
+  position -= 0.5;
+  position.x *= u_resolution.x / u_resolution.y;
   vec3 color = vec3(0.);
 
-  float polygon = polygonShape(position, 0.6, 6.0);
+  float polygon = polygonShape(position, 0.2, 6.0);
 
   color = vec3(polygon);
 
